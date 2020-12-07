@@ -22,7 +22,9 @@ const forecast = (latitude, longitude, callback) => {
           body.current.temperature +
           " degress out. There is a " +
           body.current.precip +
-          "% chance of rain."
+          "% chance of rain." +
+          " Observation time: " +
+          body.current.observation_time
       );
     }
   });
